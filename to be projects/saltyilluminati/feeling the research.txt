@@ -1,0 +1,17 @@
+saltybet -> sources -> www-cdn-jtvnw-x.js
+
+pull all information from state.json
+
+if (p1total >= p2total) {
+                        odds = ('<span class="redtext">' + (Math.round((p1to / p2to) * 10) / 10) + "</span>:1")
+                    } else {
+                        odds = ('1:<span class="bluetext">' + (Math.round((p2to / p1to) * 10) / 10) + "</span>")
+                    }
+					
+					
+saltybet uses socket.io
+get python to interface with that 
+
+learn how to read/write from python to .sql databases
+
+					

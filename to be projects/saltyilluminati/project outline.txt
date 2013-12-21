@@ -1,0 +1,14 @@
+
+take info packets 
+main datatable in database -> character sheet overall stats
+seperate character tables for stat log
+
+
+
+main table
+
+name | average betfor | win/loss ratio
+
+individual table
+
+date | name | verses | odds | betfor | betagainst | win/loss
