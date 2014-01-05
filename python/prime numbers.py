@@ -39,7 +39,7 @@ def primed2():
     print primes
     print len(primes)
 
-def primed3(a):
+def primed3(a): #fastest method i had before i began project euler/learned about sieve
     maxcheck = a
     primes = []
     divs = []       
@@ -58,6 +58,19 @@ def primed3(a):
     print primes
     print len(primes)
 
+def sieve(a): #basic sieve algorithim
+    maxprimes = a
+    sieve = range(maxprimes)
+    sieve[0],sieve[1] = False,False
+    for i in range(2,maxprimes):
+        if sieve[i]:
+            for n in range((2*i),(maxprimes),i):
+                sieve[n] = False
+    for x in sieve:
+        if x:
+            print x,
+
+
 def check():
     var1 = []
     var2 = []
@@ -70,5 +83,5 @@ def check():
     var1[999]
     var2[998]
 
-primed3(int(raw_input("primes up to what value: ")))
+sieve( int( raw_input("primes up to what value: ") ) )
 raw_input("exit")

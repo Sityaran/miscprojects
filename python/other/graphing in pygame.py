@@ -53,16 +53,17 @@ while True:
             ys = int(scale*math.sin(xs)) #the function
             
             y = (240-ys) #so 0,0 actually plots at center of screen
-
+            #the actual value used in displaying the graph of the function is y (and x, of course)
             
             #printing the x,y coord to the array to be shown on screen
             for i in range(-1,2):
                 graph[x][y+i] = redColor
+
             if (x*ymax/640.0) == d:
                 for m in range(-25,26):
                     graph[x][y+m] = greenColor
                 d += math.pi/4.0
-                print d
+            print (x*ymax/640.0),d
 
     del graph
 
